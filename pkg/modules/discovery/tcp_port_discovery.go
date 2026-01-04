@@ -21,7 +21,8 @@ import (
 
 // TCPPortDiscoveryResult stores the outcome of the TCP port discovery for a single target.
 type TCPPortDiscoveryResult struct {
-	Target    string `json:"target"`
+	Target    string `json:"target"`   // IP address
+	Hostname  string `json:"hostname"` // Original hostname (if target was a domain)
 	OpenPorts []int  `json:"open_ports"`
 }
 

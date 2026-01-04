@@ -7,13 +7,13 @@ package plugin
 import (
 	"context"
 	"fmt"
+	"os"
 	"path/filepath"
 	"strings"
 	"time"
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"os"
 
 	"github.com/vulntor/vulntor/pkg/output"
 	"github.com/vulntor/vulntor/pkg/paths"
